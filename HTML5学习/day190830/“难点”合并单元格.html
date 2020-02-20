@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合并单元格</title>
+</head>
+<body>
+    <!--rowspan是行合并，colspan是列合并-->
+    <!--遵循自上而下，自左而右的规律合并-->
+    <!--想要合并n个单元格，相应“rowspan=n”-->
+    <table border="1" cellpadding="10" align="center">
+        <caption>110宿舍舍员相关信息</caption>
+        <thead><!--thead标签表示此标签内部为表格的内部-->
+        <tr>
+            <th>110宿舍人员</th>
+            <th>大二下学期学习GPA</th>
+            <th>挂科数目</th>
+            <th>政治面貌</th>
+            <th>是否有特殊疾病</th>
+            <th>是否服兵役</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>王玺然</td>
+            <td>2.98</td>
+            <td rowspan="4">0</td>
+            <td>共青团员</td>
+            <td colspan="2">否</td>
+        </tr>
+        <tr>
+            <td>张mou</td>
+            <td>2.45</td>
+            <td>第78期入党积极分子</td>
+            <td colspan="2">否</td>
+        </tr>
+        <tr>
+            <td>王茂成</td>
+            <td>2.25</td>
+            <td>共青团员</td>
+            <td colspan="2">否</td>
+        </tr>
+        <tr>
+            <td>蒋亚琳</td>
+            <td>2.21</td>
+            <td>第78期入党积极分子</td>
+            <td colspan="2">否</td>
+        </tr>
+        <tr>
+            <td>李扬</td>
+            <td>2.04</td>
+            <td>2</td>
+            <td rowspan="2">共青团员</td>
+            <td colspan="2">否</td>
+        </tr>
+        <tr>
+            <td>王钦鹏</td>
+            <td>2.02</td>
+            <td>0</td>
+            <td colspan="2">否</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

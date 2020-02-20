@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体标签</title>
+</head>
+<body>
+<h1>引入视频</h1>
+<!--embed找不到了，用iframe吧-->
+<!--从外部引入-->
+<!--方法1-->
+<iframe height=498 width=510 src='http://player.youku.com/embed/XNDMzOTI2MjUxMg==' frameborder=0 'allowfullscreen'></iframe><br>
+<!--同音频-->
+<!--方法2-->
+<video src="xxx.mp4" autoplay controls></video>
+<!--方法3-->
+<video autoplay controls>
+    <source src="xxx.mp4"><!-多个视频格式可以支持多个浏览器-->
+    <source src="xxx.ogg">
+</video>
+
+<h1>引入音乐</h1>
+<!--音频标签audio-->
+<!--autoplay自动播放，controls控制进度按钮，loop循环播放-->
+<!--为了使浏览器兼容，音频需要同时制作两种形式：MP3和OGG-->
+<audio src="动力火车%20-%20当.mp3" autoplay="autoplay" controls loop="-1"></audio><!--声音插入方法1-->
+<audio>
+    <source src="动力火车%20-%20当.mp3"><!--声音插入方法2-->
+    <source src="动力火车%20-%20当.ogg">
+</audio>
+</body>
+</html>

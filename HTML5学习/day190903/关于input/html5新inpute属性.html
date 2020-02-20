@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input中新属性</title>
+</head>
+<body>
+<!--1.placeholder属性:placeholder属性与value属性不同，value需要删除内容，而placeholder中显示的内容不需要删除-->
+<!--2.autofocus属性：自动获得焦点（无需鼠标点击文本框）-->
+用户名：<input type="text" placeholder="请输入用户名" autofocus><br>
+
+
+
+
+<!--3.multiple属性：可以选择多个文件进行上传-->
+上传文件：<input type="file" multiple>
+
+
+
+
+
+<!--4.autocomplete属性：自动记录已经提交的内容-->
+<!--关于autocomplete属性：
+    1.需要提交按钮，才能进行记录
+    2.autocomplete属性后面需加名称
+    3.autocomplete属性默认为on“打开”，也可在某些公共场所设定为off-->
+<h3>自动记录完成</h3>
+<form action="" method="post" name="自动记录">
+     输入你的手机：<input type="text" autocomplete="off" name="自动记录手机号码"><br>
+</form>
+
+
+
+
+<!--5.required属性：必须填写-->
+<!--６.accesskey属性：获得指定地点焦点的快捷键，使用方式为"alt+s"-->
+身份证号码　：<input type="text" accesskey="s" required>
+<input type="submit" value="提交吧">
+</body>
+</html>
